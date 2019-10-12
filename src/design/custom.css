@@ -21,6 +21,10 @@
     margin-top: 100px;
 }
 
+#load{
+    margin-top: 65px;
+}
+
 .nav-fixed{
     position: fixed;
     right: 0;
@@ -39,14 +43,23 @@
     }   
 }
 
+/*mobile*/
 @media only screen and (max-width: 600px) {
+    .tabDivs{
+        margin-top: 130px;
+    }
+    #load{
+        margin-top: 105px;
+    }
+}
+
+/*iPad*/
+@media only screen and (max-width: 768px) {
     .tabDivs{
         margin-top: 130px;
     }
 }
 
-@media only screen and (max-width: 768px) {
-    .tabDivs{
-        margin-top: 130px;
-    }
+#nav-mobile{
+    margin-top: -50px;
 }
