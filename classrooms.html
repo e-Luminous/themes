@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout - eLuminous</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+        integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="src/design/materialize.min.css">
+    <link rel="stylesheet" href="src/design/custom.css">
+</head>
+<body>
+    <header>
+        <nav class="nav-extended nav-fixed materialize-indigo">
+            <div class="nav-wrapper">
+                <a class="brand-logo" id="page-logo">
+                <i class="material-icons" id="page-logo-icon">brightness_7</i> eLuminous
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                <i class="material-icons">menu</i>
+                </a>
+                <ul class="tabs tabs-transparent">
+                    <li class="tab"><a href="#test1">Posts</a></li>
+                    <li class="tab"><a class="active" href="#test2">Lab-Works</a></li>
+                    <li class="tab"><a href="#test4">Friends</a></li>
+                </ul>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                    <li>
+                        <a class="waves-effect waves-light btn-small transparent"><i class="material-icons left">arrow_drop_down</i>logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        
+        <ul class="sidenav" id="mobile-nav">
+            <li>
+                <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
+                <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+        </ul>
+    </header>
+
+    
+    <div id="load" class="progress yellow darken-1">
+        <div class="indeterminate blue"></div>
+    </div>
+    <div id="contents">
+        <div id="test1" class="col s12 tabDivs">Posts</div>
+        <div id="test2" class="col s12 tabDivs">Lab-Works</div>
+        <div id="test4" class="col s12 tabDivs">Friends</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="src/app/materialize.min.js"></script>
+    <script src="src/app/init.js"></script>
+</body>
+</html>
