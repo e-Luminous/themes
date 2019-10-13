@@ -1,5 +1,5 @@
 body {
-    background-color: rgba(245, 245, 245, 0.966);
+    background-color: whitesmoke;
 }
 
 #page-logo{
@@ -64,6 +64,9 @@ body {
     }
     div.imageOfFame{
         content:url(../lib/svg/undraw_science_fqhl.png);
+        /*Centering Image*/
+        display: block;
+        margin: 0 auto;
     }
 }
 
@@ -81,5 +84,10 @@ body {
 .justifyText{
   text-align: justify;    
   text-justify: inter-word;
+}
+
+/*rounded*/
+.card{
+    border-radius: 9px;
 }
 
