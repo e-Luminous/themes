@@ -1,9 +1,9 @@
 $(document).ready(function () {
     // Initiating Materialize Features
+    lazyLoad();
     $('.tooltipped').tooltip();
     $('.sidenav').sidenav();
     $('.tabs').tabs();
-    lazyLoad();
     
     $(".tab").on('click', function(e){
         $('#contents').hide();
