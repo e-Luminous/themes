@@ -1,3 +1,7 @@
+body {
+    background-color: rgba(245, 245, 245, 0.966);
+}
+
 #page-logo{
     font-family: 'Roboto Mono', monospace;
     font-size: 18px;
@@ -18,7 +22,7 @@
 }
 
 .tabDivs{
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #load{
@@ -36,6 +40,10 @@
     top: 0;
 }
 
+#coverImage{
+    width: 400%;
+}
+
 @media (min-width: 768px)
 {
     .nav-fixed{
@@ -51,6 +59,12 @@
     #load{
         margin-top: 105px;
     }
+    #coverImage{
+        display: none;
+    }
+    div.imageOfFame{
+        content:url(../lib/svg/undraw_science_fqhl.png);
+    }
 }
 
 /*iPad*/
@@ -63,3 +77,9 @@
 #nav-mobile{
     margin-top: -50px;
 }
+
+.justifyText{
+  text-align: justify;    
+  text-justify: inter-word;
+}
+
