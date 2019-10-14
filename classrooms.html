@@ -8,6 +8,7 @@
       <link rel="icon" href="favicon.ico">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
       <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
          integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
       <link rel="stylesheet" href="src/design/materialize.min.css">
@@ -131,7 +132,7 @@
                                                 </tr>
                                             </thead>
                                     
-                                            <tbody>
+                                            <tbody id="exp01TBody">
                                                 <tr>
                                                     <td contenteditable>0</td>
                                                     <td contenteditable>0</td>
@@ -142,6 +143,7 @@
                                         </table><br>
                                         <p class="right-align">
                                             <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
+                                            &nbsp; <a id="1" class="tblButtonAdder waves-effect waves-light btn yellow darken-4">+ New</a>
                                             &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Save</a>
                                         </p>
                                     </form>
@@ -156,22 +158,30 @@
                         <div class="col s12 l12">
                             <div class="card hoverable">
                                 <div class="card-content">
-                                    <p class="center-align"><b>Experiment 01 : </b>
-                                        Determine the source of falling objects by melting marble and measuring distance and time</p>
+                                    <p class="center-align bengaliTextHeader"><b>পরীক্ষণ নং ০২ঃ </b>
+                                        বয়েলের সূত্র যাচাইকরণ</p>
                                     <br>
                                     <form>
                                         <table class="responsive-table">
                                             <thead>
-                                                <tr>
-                                                    <th>Distance (S) meter</th>
-                                                    <th>Average Time (t) second</th>
-                                                    <th>Average Time Square (t<sup>2</sup>)</th>
-                                                    <th>S/t<sup>2</sup> (ms<sup>-2</sup>)</th>
+                                                <tr class="bengaliText">
+                                                    <th>চাপ (P)</th>
+                                                    <th>আবদ্ধ নলের উপর প্রান্তের পাঠ (a cm)</th>
+                                                    <th>আবদ্ধ নলের পারদ শীর্ষের পাঠ (b cm)</th>
+                                                    <th>খোলা নলের পারদ শীর্ষের পাঠ (c cm)</th>
+                                                    <th>বায়ু স্তম্ভের দৈর্ঘ্য , L=(a-b) cm</th>
+                                                    <th>বদ্ধ ও খোলা নলের পারদ শীর্ষের পাঠ পার্থক্য, H = (c-b) cm </th>
+                                                    <th>আবদ্ধ বায়ুর মোট চাপ P = H±h</th>
+                                                    <th>ফলাফল PV = (H±h)*L</th>
                                                 </tr>
                                             </thead>
                                     
-                                            <tbody>
+                                            <tbody id="exp02TBody">
                                                 <tr>
+                                                    <td><p> <label> <input checked name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপ</span> </label> </p> <p> <label> <input name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপের বেশী</span> </label> </p> <p> <label> <input name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপের কম</span> </label> </p></td>
+                                                    <td contenteditable>0</td>
+                                                    <td contenteditable>0</td>
+                                                    <td contenteditable>0</td>
                                                     <td contenteditable>0</td>
                                                     <td contenteditable>0</td>
                                                     <td contenteditable>0</td>
@@ -180,9 +190,10 @@
                                             </tbody>
                                         </table><br>
                                         <p class="right-align">
-                                            <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
-                                            &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Save</a>
-                                        </p>
+                                             <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
+                                             &nbsp; <a id="2" class="tblButtonAdder waves-effect waves-light btn yellow darken-4">+ New</a>
+                                             &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Save</a>
+                                         </p>
                                     </form>
                                 </div>
                             </div>
