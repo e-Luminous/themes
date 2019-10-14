@@ -24,6 +24,60 @@ $(document).ready(function () {
 
         addTBody(closestTableTBody,tBodyContent,requestedTableLength);
     });
+
+    /* Tables to JSON */
+    $("#exp01Form").submit(function (e) { 
+        e.preventDefault();
+        var data = Array();
+    
+        $("#exp01Table tbody tr").each(function(i, v){
+            data[i] = Array();
+            $(this).children('td').each(function(ii, vv){
+                data[i][ii] = $(this).text();
+            }); 
+        });
+        // Array of arrays to Array of objects
+        var objs = data.map(function(x) { 
+            return { 
+                distance: x[0], 
+                averageTime: x[1],
+                averageTimeSquare: x[2],
+                result: x[3]
+            }; 
+        });
+        console.log(objs);
+    });
+
+    $("#exp02Form").submit(function (e) { 
+        e.preventDefault();
+        var data = Array();
+    
+        $("#exp02Table tbody tr").each(function(i, v){
+            data[i] = Array();
+            $(this).children('td').each(function(ii, vv){
+                if(ii==0){
+                    var valueOfSelectedAirPressure = $("input[name='group"+(i+1)+"']:checked").val();
+                    data[i][ii] = valueOfSelectedAirPressure;
+                }
+                else{
+                    data[i][ii] = $(this).text();
+                }
+            });
+        });
+        var objs = data.map(function(x) { 
+            return {
+                pressure: x[0], 
+                aCM: x[1], 
+                bCM: x[2],
+                cCM: x[3],
+                length: x[4],
+                difference: x[5],
+                totalPressure: x[6],
+                result: x[7]
+            }; 
+        });
+        console.log(objs);
+    });
     
 });
 
