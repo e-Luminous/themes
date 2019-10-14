@@ -51,6 +51,15 @@ body {
     }   
 }
 
+.bengaliText {
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.bengaliTextHeader {
+    font-family: 'Hind Siliguri', sans-serif;
+    font-size: 15px;
+}
+
 /*mobile*/
 @media only screen and (max-width: 600px) {
     .tabDivs{
@@ -67,6 +76,10 @@ body {
         /*Centering Image*/
         display: block;
         margin: 0 auto;
+    }
+    .bengaliText {
+        font-family: 'Hind Siliguri', sans-serif;
+        font-size: 10px;
     }
 }
 
@@ -90,4 +103,6 @@ body {
 .card{
     border-radius: 9px;
 }
+
+
 
