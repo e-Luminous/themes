@@ -1,13 +1,7 @@
 
 $(document).ready(function(){
-    $('.button-collapse').sideNav({
-        menuWidth: 300,
-        edge: 'left',
-        closeOnClick: false,
-        draggable: true 
-      }
-    );
-    $('.button-collapse').sideNav('off');
-
+    $('.sidenav').sidenav();
+    $('.tooltipped').tooltip();
+    $(".dropdown-trigger").dropdown();
     $('#nav-mobile').sidenav();
   });
