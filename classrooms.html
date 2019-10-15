@@ -1,110 +1,151 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Layout - eLuminous</title>
-    <link rel="icon" href="favicon.ico">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
-    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-    <link rel="stylesheet" href="src/design/materialize.min.css">
-    <link rel="stylesheet" href="src/design/custom.css">
-</head>
-
-<body>
-    <header>
-        <nav class="nav-extended nav-fixed materialize-indigo">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Layout - eLuminous</title>
+      <link rel="icon" href="favicon.ico">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
+         integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+      <link rel="stylesheet" href="src/design/materialize.min.css">
+      <link rel="stylesheet" href="src/design/custom.css">
+      <link rel="stylesheet" href="src/design/app.css">
+      
+   </head>
+   <body>
+      <header>
+         <nav class="nav-extended nav-fixed materialize-indigo">
             <div class="nav-wrapper">
-                <a class="brand-logo" id="page-logo">
-                    <i class="material-icons" id="page-logo-icon">brightness_7</i> eLuminous
-                </a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-                    <i class="material-icons">menu</i>
-                </a>
-                <ul class="tabs tabs-transparent">
-                    <li class="tab"><a href="#test1">Posts</a></li>
-                    <li class="tab"><a class="active" href="#test2">Lab-Works</a></li>
-                    <li class="tab"><a href="#test4">Friends</a></li>
-                </ul>
-                <ul id="nav-mobile" class="right hide-on-med-and-down">
-                    <li>
-                        <a class="waves-effect waves-light btn-small transparent"><i class="material-icons left">arrow_drop_down</i>logout</a>
-                    </li>
-                </ul>
+               <a class="brand-logo" id="page-logo">
+               <i class="material-icons" id="page-logo-icon">brightness_7</i> eLuminous
+               </a>
+               <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+               <i class="material-icons">menu</i>
+               </a>
+               <ul class="tabs tabs-transparent">
+                  <li class="tab"><a href="#test1">Posts</a></li>
+                  <li class="tab"><a class="active" href="#test2">Lab-Works</a></li>
+                  <li class="tab"><a href="#test4">Friends</a></li>
+               </ul>
+               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <li>
+                     <a class="waves-effect waves-light btn-small transparent"><i class="material-icons left">arrow_drop_down</i>logout</a>
+                  </li>
+               </ul>
             </div>
-        </nav>
-        <ul class="sidenav" id="mobile-nav">
+         </nav>
+         <ul class="sidenav" id="mobile-nav">
             <li>
-                <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
-                    <i class="fab fa-github"></i> GitHub
-                </a>
+               <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
+               <i class="fab fa-github"></i> GitHub
+               </a>
             </li>
-        </ul>
-    </header>
-    <div id="load" class="progress yellow darken-1">
-        <div class="indeterminate blue"></div>
-    </div>
-    <div id="contents">
-        <div id="test1" class="col s12 tabDivs">Posts</div>
-        <div id="test2" class="tabDivs">
+         </ul>
+      </header>
+      <div id="load" class="progress yellow darken-1">
+         <div class="indeterminate blue"></div>
+      </div>
+      <div id="contents">
+         <div id="test1" class="col s12 tabDivs">Posts</div>
+         <div id="test2" class="tabDivs">
             <div class="row">
-                <div class="col s12 l12">
-                    <div class="card horizontal hoverable">
-                        <div class="card-image" id="coverImage">
-                            <img src="src/lib/svg/undraw_science_fqhl.png">
+               <div class="col s12 l12">
+                  <div class="card horizontal hoverable">
+                     <div class="card-image" id="coverImage">
+                        <img src="src/lib/svg/undraw_science_fqhl.png">
+                     </div>
+                     <div class="row">
+                        <div class="col s12 l6">
+                           <div class="card-stacked">
+                              <div class="card-content">
+                                 <div class="imageOfFame card-image"></div>
+                                 <p class="justifyText">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                              </div>
+                           </div>
                         </div>
-                        <div class="row">
-                            <div class="col s12 l6">
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <div class="imageOfFame card-image"></div>
-                                        <p class="justifyText">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col s12 l6">
-                                <div class="card-stacked">
-                                    <div class="card-content">
-                                        <p class="justifyText">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col s12 l6">
+                           <div class="card-stacked">
+                              <div class="card-content">
+                                 <p class="justifyText">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+                              </div>
+                           </div>
                         </div>
-                    </div>
-                </div>
+                     </div>
+                  </div>
+               </div>
             </div>
             <!-- Experiments-->
             <div class="row">
-                <div class="col s12 l2">
-                    <div class="card hoverable">
-                        <div class="card-content">
-                            <p><b>Upcoming</b></p>
-                            <br>
-                            <p>Woohoo, no work due soon!</p>
-                        </div>
-                        <div class="card-action">
-                            <a href="#">View all</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col s12 l10">
+               <div class="col s12 l2">
+                  <div class="card hoverable">
+                     <div class="card-content">
+                        <p><b>Upcoming</b></p>
+                        <br>
+                        <p>Woohoo, no work due soon!</p>
+                     </div>
+                     <div class="card-action">
+                        <a href="#">View all</a>
+                     </div>
+                  </div>
+               </div>
+               <div class="col s12 l10">
                     <!--Start-->
                     <div class="row">
                         <div class="col s12 l12">
                             <div class="card hoverable">
                                 <div class="card-content">
                                     <form>
-                                        <div class="input-field">
-                                            <i class="material-icons prefix">account_circle</i>
-                                            <input type="text" id="autocomplete-input" class="autocomplete">
-                                            <label for="textarea1">Share something with your class</label>
-                                        </div>
+                                    <div class="input-field">
+                                        <i class="material-icons prefix">account_circle</i>
+                                        <input type="text" id="autocomplete-input" class="autocomplete">
+                                        <label for="textarea1">Share something with your class</label>
+                                    </div>
+                                    <p class="right-align">
+                                        <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
+                                        &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Post</a>
+                                    </p>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End-->
+
+                    <!--Start-->
+                    <div class="row">
+                        <div class="col s12 l12">
+                            <div class="card hoverable">
+                                <div class="card-content">
+                                    <p class="center-align"><b>Experiment 01 : </b>
+                                        Determine the source of falling objects by melting marble and measuring distance and time</p>
+                                    <br>
+                                    <form>
+                                        <table class="responsive-table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Distance (S) meter</th>
+                                                    <th>Average Time (t) second</th>
+                                                    <th>Average Time Square (t<sup>2</sup>)</th>
+                                                    <th>S/t<sup>2</sup> (ms<sup>-2</sup>)</th>
+                                                </tr>
+                                            </thead>
+                                    
+                                            <tbody>
+                                                <tr>
+                                                    <td contenteditable>0</td>
+                                                    <td contenteditable>0</td>
+                                                    <td contenteditable>0</td>
+                                                    <td contenteditable>0</td>
+                                                </tr>
+                                            </tbody>
+                                        </table><br>
                                         <p class="right-align">
                                             <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
-                                            &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Post</a>
+                                            &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Save</a>
                                         </p>
                                     </form>
                                 </div>
@@ -121,8 +162,8 @@
                                     <p class="center-align"><b>Experiment 01 : </b>
                                         Determine the source of falling objects by melting marble and measuring distance and time</p>
                                     <br>
-                                    <form id="exp01Form">
-                                        <table id="exp01Table" class="responsive-table">
+                                    <form>
+                                        <table class="responsive-table">
                                             <thead>
                                                 <tr>
                                                     <th>Distance (S) meter</th>
@@ -131,8 +172,8 @@
                                                     <th>S/t<sup>2</sup> (ms<sup>-2</sup>)</th>
                                                 </tr>
                                             </thead>
-
-                                            <tbody id="exp01TBody">
+                                    
+                                            <tbody>
                                                 <tr>
                                                     <td contenteditable>0</td>
                                                     <td contenteditable>0</td>
@@ -143,8 +184,7 @@
                                         </table><br>
                                         <p class="right-align">
                                             <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
-                                            &nbsp; <a id="1" class="tblButtonAdder waves-effect waves-light btn pink lighten-2">+ New</a>
-                                            &nbsp; <button type="submit" class="waves-effect waves-light btn materialize-indigo white-text">Save</button>
+                                            &nbsp; <a class="waves-effect waves-light btn materialize-indigo">Save</a>
                                         </p>
                                     </form>
                                 </div>
@@ -153,69 +193,169 @@
                     </div>
                     <!--End-->
 
-                    <!--Start-->
-                    <div class="row">
-                        <div class="col s12 l12">
-                            <div class="card hoverable">
-                                <div class="card-content">
-                                    <p class="center-align bengaliTextHeader"><b>পরীক্ষণ নং ০২ঃ </b>
-                                        বয়েলের সূত্র যাচাইকরণ</p>
-                                    <br>
-                                    <form id="exp02Form">
-                                        <table id="exp02Table" class="responsive-table">
-                                            <thead>
-                                                <tr class="bengaliText">
-                                                    <th>চাপ (P)</th>
-                                                    <th>আবদ্ধ নলের উপর প্রান্তের পাঠ (a cm)</th>
-                                                    <th>আবদ্ধ নলের পারদ শীর্ষের পাঠ (b cm)</th>
-                                                    <th>খোলা নলের পারদ শীর্ষের পাঠ (c cm)</th>
-                                                    <th>বায়ু স্তম্ভের দৈর্ঘ্য , L=(a-b) cm</th>
-                                                    <th>বদ্ধ ও খোলা নলের পারদ শীর্ষের পাঠ পার্থক্য, H = (c-b) cm </th>
-                                                    <th>আবদ্ধ বায়ুর মোট চাপ P = H±h</th>
-                                                    <th>ফলাফল PV = (H±h)*L</th>
-                                                </tr>
-                                            </thead>
-
-                                            <tbody id="exp02TBody">
-                                                <tr>
-                                                    <td>
-                                                        <p> <label> <input value="0" checked name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপ</span> </label> </p>
-                                                        <p> <label> <input value="1" name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপের বেশী</span> </label> </p>
-                                                        <p> <label> <input value="2" name="group1" type="radio" /> <span>বায়ু মন্ডলের চাপের কম</span> </label> </p>
-                                                    </td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                    <td contenteditable>0</td>
-                                                </tr>
-                                            </tbody>
-                                        </table><br>
-                                        <p class="right-align">
-                                            <a class="waves-effect waves-light btn transparent grey-text text-darken-2">Cancel</a>
-                                            &nbsp; <a id="2" class="tblButtonAdder waves-effect waves-light btn pink lighten-2">+ New</a>
-                                            &nbsp; <button type="submit" class="waves-effect waves-light btn materialize-indigo white-text">Save</button>
-                                        </p>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!--End-->
-
-                </div>
+               </div>
             </div>
-        </div>
+         </div>
 
-        <div id="test4" class="col s12 tabDivs">Friends</div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="src/app/materialize.min.js"></script>
-    <script src="src/app/init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
-    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
-</body>
+         <!-- friends -->
+         <div id="test4" class="tabDivs">
+               <div class="row">
+                   <div class="col s12 l2">
+                       <div class="card horizontal hoverable">
+                           <div class="card-content">
+                               <div class="row" id="teacher">
+                                   <div class="col s12 l12">
+                                       <h4>Teacher</h4>
+                                   </div>
+                                   <div class="col s12 l12">
+                                       <img src="src/lib/svg/zihad.jpeg" width="100px" height="100px" alt=""
+                                           class="circle responsive valign profile-image">
+                                   </div>
+                                   <div class="col s12 l12">
+                                       <h5>Md.Anwar Hossain</h5>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col l1">
+   
+                   </div>
+                   <div class="col s12 l5">
+                       <div class="row">
+                           <div class="col s12 l12">
+                               <div class="card horizontal hoverable" id="scard">
+                                   <div class="card-content" id="description">
+                                       <div class="col s12 l12">
+                                           <h4>Classmates</h4>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+   
+                       <div class="row">
+                           <div class="col s12 l12">
+                               <div class="card horizontal hoverable" is="scard">
+                                   <div class="card-content">
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>                                          
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shunjid Rahman Showrov</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" padding-top="100px" width="30px"
+                                                   height="30px" alt="" class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Zubayer Himel</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shah Fahad Hossain</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Anindo Shahriar</a>
+                                           </div>
+                                       </div>
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shunjid Rahman Showrov</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" padding-top="100px" width="30px"
+                                                   height="30px" alt="" class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Zubayer Himel</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+   
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shah Fahad Hossain</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Anindo Shahriar</a>
+                                           </div>
+                                       </div>
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shunjid Rahman Showrov</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" padding-top="100px" width="30px"
+                                                   height="30px" alt="" class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Zubayer Himel</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+   
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Shah Fahad Hossain</a>
+                                           </div>
+                                       </div>
+   
+                                       <div class="col s12 l12">
+                                           <div class="row">
+                                               <div class="divider"></div>
+                                               <img src="src/lib/svg/zihad.jpeg" width="30px" height="30px" alt=""
+                                                   class="circle responsive valign profile-image">
+                                               <a class="" id="sname">Anindo Shahriar</a>
+                                           </div>
+                                       </div>
+                                   </div>
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
 
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+      <script src="src/app/materialize.min.js"></script>
+      <script src="src/app/init.js"></script>
+   </body>
 </html>
