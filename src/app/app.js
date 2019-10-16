@@ -1,7 +1,19 @@
-
 $(document).ready(function(){
-    $('.sidenav').sidenav();
+    $(".dropdown-trigger").dropdown({
+        hover : true
+    });
     $('.tooltipped').tooltip();
-    $(".dropdown-trigger").dropdown();
-    $('#nav-mobile').sidenav();
+    $('.sidenav').sidenav();
+    $('.tabs').tabs();
+    $('select').formSelect();
+    lazyLoad();
   });
+
+  function lazyLoad() {
+    $('.progress').show(function(e) {
+        $('#contents').hide();
+    }).delay(1500).fadeOut(function(ex) {
+        $('#contents').fadeIn();
+    });
+}
+
