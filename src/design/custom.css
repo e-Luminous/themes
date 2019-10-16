@@ -3,7 +3,7 @@ body {
 }
 
 #page-logo{
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Google Sans', monospace;
     font-size: 18px;
     margin-left: 15px;
     margin-top: -2px;
@@ -58,6 +58,38 @@ body {
 .bengaliTextHeader {
     font-family: 'Hind Siliguri', sans-serif;
     font-size: 15px;
+}
+
+h4 {
+    font-family: 'Google Sans', monospace;
+}
+
+a{
+    font-family: 'Product Sans', monospace;
+}
+
+p{
+    font-family: 'Product Sans', monospace;
+}
+
+.collapsible-header{
+    font-family: 'Product Sans', monospace;
+}
+
+.collapsible-body{
+    font-family: 'Product Sans', monospace;
+}
+
+input{
+    font-family: 'Google Sans', monospace;
+}
+
+label{
+    font-family: 'Google Sans', monospace;
+}
+
+.card-title{
+    font-family: 'Google Sans', monospace;
 }
 
 /*mobile*/

@@ -1,10 +1,10 @@
 
   function anyThing(destroyFeedback) {
-    setTimeout(function(){ destroyFeedback(true); }, 1000);
+    setTimeout(function(){ destroyFeedback(true); }, 300);
   }
   
   function noThing(destroyFeedback) {
-    setTimeout(function(){ destroyFeedback(true); }, 1000);
+    setTimeout(function(){ destroyFeedback(true); }, 300);
   }
 
   var stepperDiv = document.querySelector('.stepper');

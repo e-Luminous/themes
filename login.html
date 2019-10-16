@@ -1,133 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Layout - eLuminous</title>
     <link rel="icon" href="favicon.ico">
-    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'>
-    <link rel='stylesheet' href='https://fonts.googleapis.com/icon?family=Material+Icons'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&amp;lang=en" rel="stylesheet">
     <link rel='stylesheet' href='https://unpkg.com/materialize-stepper@3.0.0-beta.1.0.1/dist/css/mstepper.min.css'>
-    <link rel="stylesheet" href="src/design/app.css">
-    <link rel="stylesheet" href="src/design/custom.css">
-    
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="src/design/materialize.min.css">
+    <link rel="stylesheet" href="src/design/home.css">
+
 </head>
+
 <body>
-    <head>
+    <header>
         <nav class="nav-extended nav-fixed materialize-indigo">
-            <div class="nav-wrapper">
-                <a class="brand-logo tooltipped" id="page-logo" data-position="right" data-tooltip="classroom for college student" >
-                    <i class="material-icons " id="page-logo-icon">brightness_7</i> eLuminous
-                </a>
-                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-                    <i class="material-icons">menu</i>
-                </a>
-                
-            </div>
+           <div class="nav-wrapper">
+              <a class="brand-logo" id="page-logo">
+              <i class="material-icons" id="page-logo-icon">brightness_7</i> &nbsp; eLuminous
+              </a>
+              <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+              <i class="material-icons">menu</i>
+              </a>
+              <ul id="nav-mobile" class="right hide-on-med-and-down">
+                   <!-- Dropdown Trigger -->
+                 <li>
+                    <a class='dropdown-trigger' href='#' data-target='dropdown1'><i class="material-icons">more_vert</i></a>
+
+                    <!-- Dropdown Structure -->
+                    <ul id='dropdown1' class='dropdown-content'>
+                       <li><a class="grey-text text-darken-3" href="login.html"><i class="material-icons">eco</i>SignIn</a></li>
+                      <li><a class="grey-text text-darken-3" href="registration.html"><i class="material-icons">view_module</i>SignUp</a></li>
+                      <li><a class="grey-text text-darken-3" href="classrooms.html"><i class="material-icons">class</i>Classroom</a></li>
+                    </ul>
+                 </li>
+              </ul>
+           </div>
         </nav>
-        <ul class="sidenav" id="mobile-nav">
-                <li>
-                    <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
-                        <i class="fab fa-github">Github</i>
-                    </a>
-                </li>
-            </ul>
-    </head>
+        <ul class="sidenav yellow-text text-darken-3" id="mobile-nav">
+           <li>
+              <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
+              <i class="fab fa-github"></i> GitHub
+              </a>
+           </li>
+        </ul>
+     </header>
 
     <form>
-            <div class="container" id="contents">
-                <div class="row">
-    
-                        <div class="card horizontal hoverable whitesmoke" id="logincard">
-                            <div class="row">
-                                
-                                    <div class="card-content">
-                                        <ul class="stepper parallel horizontal col s12 l12">
-                                            <li class="step active">
-                                                <div class="step-title waves-effect waves-light">E-mail</div>
-                                                <div class="step-content">
-                                                    <div class="row">
-                                                        <div class="form-field col s12 l12">
-                                                            <div class="input-field col s12 l12">
-                                                                <i class="material-icons prefix">email</i>                                                           
-                                                                <input type="email" name="email"
-                                                                    class="required validate" />                                                               
-                                                                <label for="email">your email</label>                                                           
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="step-actions">
-                                                        <button
-                                                            class="waves-effect waves-light materialize-indigo btn next-step">next</button>
-                                                       
-                                                    </div>
+        <div class="container" id="contents">
+            <div class="row">
+                <div class="card horizontal hoverable whitesmoke" id="logincard">
+                    <div class="row">
+
+                        <div class="card-content">
+                            <ul class="stepper parallel horizontal col s12 l12">
+                                <li class="step active">
+                                    <div class="step-title waves-effect waves-light">E-mail</div>
+                                    <div class="step-content">
+                                        <div class="row">
+                                            <div class="form-field col s12 l12">
+                                                <div class="input-field col s12 l12">
+                                                    <i class="material-icons prefix">email</i>
+                                                    <input required type="email" name="email" class="required validate" />
+                                                    <label for="email">Your email</label>
                                                 </div>
-                                            </li>
-                                            <li class="step">
-                                                <div class="step-title waves-effect waves-light">Name</div>
-                                                <div class="step-content">
-                                                    <div class="row">
-                                                        <div class="form-field col s12 l12">
-                                                            <div class="input-field col s12 l12">
-                                                                <i class="material-icons prefix">account_circle</i> 
-                                                                <input type="text" name="name" class="required validate" />
-                                                                <label for="name">your name</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="step-actions">
-                                                        <button
-                                                            class="waves-effect waves-light materialize-indigo btn next-step">next</button>
-                                                        <button
-                                                            class="waves-effect waves-light btn-flat previous-step">back</button>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="step">
-                                                <div class="step-title waves-effect waves-light">Password</div>
-                                                <div class="step-content">
-                                                    <div class="row">
-                                                        <div class="form-field col s12 l12">
-                                                            <div class="input-field col s12 l12">
-                                                                    <i class="material-icons prefix">lock</i> 
-                                                                <input type="password" name="password"
-                                                                    class="required validate" />
-                                                                <label for="password">your password</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="step-actions">
-                                                        <button
-                                                            class="waves-effect waves-light materialize-indigo btn next-step">next</button>
-                                                        <button
-                                                            class="waves-effect waves-light btn-flat previous-step">back</button>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                            <li class="step"> 
-                                                <div class="step-title waves-effect eaves-light">submit</div>
-                                                <div class="step-content">
-                                                    <div class="step-actions">
-                                                        <button class="waves-effect waves-light materialize-indigo btn submit">login</button>
-                                                        <button class="waves-effect waves-light btn-flat previous-step">back</button>
-                                                    </div>
-                                                </div>
-                                            </li>
-                                        </ul>
+                                            </div>
+                                        </div>
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                        </div>
                                     </div>
-                                
-                            </div>
+                                </li>
+                                <li class="step">
+                                    <div class="step-title waves-effect waves-light">Password</div>
+                                    <div class="step-content">
+                                        <div class="row">
+                                            <div class="form-field col s12 l12">
+                                                <div class="input-field col s12 l12">
+                                                    <i class="material-icons prefix">lock</i>
+                                                    <input type="password" name="password" class="required validate" />
+                                                    <label for="password">your password</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="step-actions">
+                                            <button class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                            <button class="waves-effect waves-light btn-flat previous-step">back</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step">
+                                    <div class="step-title waves-effect eaves-light">Finalize</div>
+                                    <div class="step-content">
+                                        <div class="step-actions">
+                                            <a href="classrooms.html" class="waves-effect waves-light materialize-indigo btn submit">login</a>
+                                            <button class="waves-effect waves-light btn-flat previous-step">back</button>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
-                   
+
+                    </div>
                 </div>
+
             </div>
-        </form>
+        </div>
+    </form>
 
-
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
-        <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
-        <script src='https://unpkg.com/materialize-stepper@3.0.0-beta.1.0.1/dist/js/mstepper.min.js'></script>
-        <script src="src/app/app.js"></script>
-        <script src="src/app/stepper.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+    <script src='https://unpkg.com/materialize-stepper@3.0.0-beta.1.0.1/dist/js/mstepper.min.js'></script>
+    <script src="src/app/app.js"></script>
+    <script src="src/app/stepper.js"></script>
 </body>
+
 </html>
