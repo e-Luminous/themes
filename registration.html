@@ -50,107 +50,114 @@
         </ul>
      </header>
    
-    <div class="section grey lighten-5" id="reg">
-        <div class="container">
+     <form>
+        <div class="container" id="contents">
             <div class="row">
-                <div class="col l6 s12  offset-l3 offset-m1">
-                    <h2 class="center-align blue-text">Sign up</h2>
-                    <div class="card">
+
+                <div class="card horizontal hoverable whitesmoke" id="logincard">
+                    <div class="row">
+
                         <div class="card-content">
-
-                            <ul data-method="GET" class="stepper linear">
-                                <li class="step ">
-                                    <div class="step-title waves-effect waves-dark">Name</div>
-                                    <div class="step-content">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="name" name="name" type="text" class="validate" required>
-                                                <label for="email">Your name</label>
+                            <ul class="stepper parallel horizontal col s12 l12">
+                                    <li class="step active">
+                                            <div class="step-title waves-effect waves-light">Name</div>
+                                            <div class="step-content">
+                                                <div class="row">
+                                                    <div class="form-field col s12 l12">
+                                                        <div class="input-field col s12 l12">
+                                                            <i class="material-icons prefix">account_circle</i>
+                                                            <input type="text" name="name" class="required validate" />
+                                                            <label for="name">your name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="step-actions">
+                                                    <button
+                                                        class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="step-actions">
-                                            <button class="waves-effect waves-dark btn blue next-step" data-feedback="anyThing">Continue</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="step ">
-                                    <div class="step-title waves-effect waves-dark">E-mail</div>
-                                    <div class="step-content">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="email" name="email" type="email" class="validate" required>
-                                                <label for="email">Your e-mail</label>
-                                            </div>
-                                        </div>
-                                        <div class="step-actions">
-                                            <button class="waves-effect waves-dark btn blue next-step"
-                                                data-feedback="anyThing">Continue</button>
-                                                <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="step ">
-                                    <div class="step-title waves-effect waves-dark">Role</div>
-                                    <div class="step-content">
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <p>
-                                                    <label>
-                                                        <input name="group1" type="radio" checked />
-                                                        <span>Student</span>
-                                                    </label>
-                                                </p>
-                                                <p>
-                                                    <label>
-                                                        <input name="group1" type="radio" />
-                                                        <span>Teacher</span>
-                                                    </label>
-                                                </p>
-                                                <p>
-                                            </div>
-                                        </div>
-                                        <div class="step-actions">
-                                            <button class="waves-effect waves-dark btn blue next-step"
-                                                data-feedback="anyThing">Continue</button>
-                                                <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
-                                        </div>
-                                    </div>
-                                </li>
-
+                                        </li>
                                 <li class="step">
-                                    <div class="step-title waves-effect waves-dark">Password</div>
+                                    <div class="step-title waves-effect waves-light">E-mail</div>
                                     <div class="step-content">
                                         <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="password" name="password" type="password" class="validate"
-                                                    required>
-                                                <label for="password">Your password</label>
+                                            <div class="form-field col s12 l12">
+                                                <div class="input-field col s12 l12">
+                                                    <i class="material-icons prefix">email</i>
+                                                    <input type="email" name="email" class="required validate" />
+                                                    <label for="email">your email</label>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="step-actions">
-                                            <button class="waves-effect waves-dark btn blue next-step">CONTINUE</button>
-                                            <button class="waves-effect waves-dark btn-flat previous-step">BACK</button>
+                                            <button
+                                                class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                <button
+                                                class="waves-effect waves-light btn-flat previous-step">back</button>
                                         </div>
                                     </div>
                                 </li>
                                 <li class="step">
-                                    <div class="step-title waves-effect waves-dark">Login</div>
+                                        <div class="step-title waves-effect waves-light">Phone No</div>
+                                        <div class="step-content">
+                                            <div class="row">
+                                                <div class="form-field col s12 l12">
+                                                    <div class="input-field col s12 l12">
+                                                        <i class="material-icons prefix">call</i>
+                                                        <input type="number" name="phone" class="required validate" />
+                                                        <label for="phone">your phone no</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="step-actions">
+                                                <button
+                                                    class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                    <button
+                                                    class="waves-effect waves-light btn-flat previous-step">back</button>
+                                            </div>
+                                        </div>
+                                    </li>
+                            
+                                <li class="step">
+                                    <div class="step-title waves-effect waves-light">Password</div>
                                     <div class="step-content">
-
+                                        <div class="row">
+                                            <div class="form-field col s12 l12">
+                                                <div class="input-field col s12 l12">
+                                                    <i class="material-icons prefix">lock</i>
+                                                    <input type="password" name="password" class="required validate" />
+                                                    <label for="password">your password</label>
+                                                </div>
+                                            </div>
+                                        </div>
                                         <div class="step-actions">
-                                            <a href="classrooms.html" class="waves-effect waves-dark btn blue next-step"
-                                                data-feedback="noThing">Submit</a>
+                                            <button
+                                                class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                            <button
+                                                class="waves-effect waves-light btn-flat previous-step">back</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="step">
+                                    <div class="step-title waves-effect eaves-light">submit</div>
+                                    <div class="step-content">
+                                        <div class="step-actions">
+                                            <button
+                                                class="waves-effect waves-light materialize-indigo btn submit">login</button>
+                                            <button
+                                                class="waves-effect waves-light btn-flat previous-step">back</button>
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-
                         </div>
+
                     </div>
                 </div>
+
             </div>
         </div>
-    </div>
+    </form>
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
