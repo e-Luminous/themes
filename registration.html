@@ -18,10 +18,10 @@
 
 <body>
     <header>
-        <nav class="nav-extended nav-fixed materialize-indigo">
+        <nav class="nav-extended nav-fixed white grey-text text-darken-4">
            <div class="nav-wrapper">
-              <a class="brand-logo" id="page-logo">
-              <i class="material-icons" id="page-logo-icon">brightness_7</i> &nbsp; eLuminous
+              <a class="brand-logo grey-text text-darken-3" id="page-logo">
+                  <i class="material-icons blue-text text-darken-2" id="page-logo-icon">brightness_7</i> &nbsp; eLuminous
               </a>
               <a href="#" class="sidenav-trigger" data-target="mobile-nav">
               <i class="material-icons">menu</i>
@@ -29,13 +29,14 @@
               <ul id="nav-mobile" class="right hide-on-med-and-down">
                    <!-- Dropdown Trigger -->
                  <li>
-                    <a class='dropdown-trigger' href='#' data-target='dropdown1'><i class="material-icons">more_vert</i></a>
+                    <a class='dropdown-trigger grey-text text-darken-4' href='#' data-target='dropdown1'>
+                        <i class="material-icons left grey-text text-darken-2">arrow_drop_down</i>Connect
+                    </a>
 
                     <!-- Dropdown Structure -->
                     <ul id='dropdown1' class='dropdown-content'>
-                       <li><a class="grey-text text-darken-3" href="login.html"><i class="material-icons">eco</i>SignIn</a></li>
-                      <li><a class="grey-text text-darken-3" href="registration.html"><i class="material-icons">view_module</i>SignUp</a></li>
-                      <li><a class="grey-text text-darken-3" href="classrooms.html"><i class="material-icons">class</i>Classroom</a></li>
+                        <li><a class="grey-text text-darken-3" href="login.html"><i class="material-icons cyan-text text-darken-3">accessibility_new</i>Access</a></li>
+                        <li><a class="grey-text text-darken-3" href="registration.html"><i class="material-icons yellow-text text-darken-3">school</i>Join Classroom</a></li>
                     </ul>
                  </li>
               </ul>
@@ -49,8 +50,8 @@
            </li>
         </ul>
      </header>
-   
-     <form>
+
+     <form action="classrooms.html">
         <div class="container" id="contents">
             <div class="row">
 
@@ -59,24 +60,24 @@
 
                         <div class="card-content">
                             <ul class="stepper parallel horizontal col s12 l12">
-                                    <li class="step active">
-                                            <div class="step-title waves-effect waves-light">Name</div>
-                                            <div class="step-content">
-                                                <div class="row">
-                                                    <div class="form-field col s12 l12">
-                                                        <div class="input-field col s12 l12">
-                                                            <i class="material-icons prefix">account_circle</i>
-                                                            <input type="text" name="name" class="required validate" />
-                                                            <label for="name">your name</label>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="step-actions">
-                                                    <button
-                                                        class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                <li class="step active">
+                                    <div class="step-title waves-effect waves-light">Name</div>
+                                    <div class="step-content">
+                                        <div class="row">
+                                            <div class="form-field col s12 l12">
+                                                <div class="input-field col s12 l12">
+                                                    <i class="material-icons prefix">account_circle</i>
+                                                    <input type="text" id="userName" name="name" class="validate" />
+                                                    <label for="name">Your Name</label>
                                                 </div>
                                             </div>
-                                        </li>
+                                        </div>
+                                        <div class="step-actions">
+                                            <button
+                                                class="waves-effect waves-light blue darken-2 btn next-step" id="nameNext">Next</button>
+                                        </div>
+                                    </div>
+                                </li>
                                 <li class="step">
                                     <div class="step-title waves-effect waves-light">E-mail</div>
                                     <div class="step-content">
@@ -91,7 +92,7 @@
                                         </div>
                                         <div class="step-actions">
                                             <button
-                                                class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                class="waves-effect waves-light blue darken-2 btn next-step">next</button>
                                                 <button
                                                 class="waves-effect waves-light btn-flat previous-step">back</button>
                                         </div>
@@ -111,7 +112,7 @@
                                             </div>
                                             <div class="step-actions">
                                                 <button
-                                                    class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                    class="waves-effect waves-light blue darken-2 btn next-step">next</button>
                                                     <button
                                                     class="waves-effect waves-light btn-flat previous-step">back</button>
                                             </div>
@@ -132,7 +133,7 @@
                                         </div>
                                         <div class="step-actions">
                                             <button
-                                                class="waves-effect waves-light materialize-indigo btn next-step">next</button>
+                                                class="waves-effect waves-light blue darken-2 btn next-step">next</button>
                                             <button
                                                 class="waves-effect waves-light btn-flat previous-step">back</button>
                                         </div>
@@ -143,7 +144,7 @@
                                     <div class="step-content">
                                         <div class="step-actions">
                                             <button
-                                                class="waves-effect waves-light materialize-indigo btn submit">login</button>
+                                                class="waves-effect waves-light blue darken-2 btn submit">login</button>
                                             <button
                                                 class="waves-effect waves-light btn-flat previous-step">back</button>
                                         </div>
