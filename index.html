@@ -1,72 +1,73 @@
-
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="utf-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Layout - eLuminous</title>
-      <link rel="icon" href="favicon.ico">
-      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&amp;lang=en" rel="stylesheet">
-      <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css'
-         integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
-      <link rel="stylesheet" href="src/design/materialize.min.css">
-      <link rel="stylesheet" href="src/design/home.css">
-      <link rel="stylesheet" href="src/design/app.css">
-   </head>
-   <body>
-      <header>
-         <nav class="nav-extended nav-fixed white">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout - eLuminous</title>
+    <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Product+Sans:400&amp;lang=en" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans:400,500&amp;lang=en" rel="stylesheet">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    <link rel="stylesheet" href="src/design/materialize.min.css">
+    <link rel="stylesheet" href="src/design/home.css">
+    <link rel="stylesheet" href="src/design/app.css">
+</head>
+
+<body>
+    <header>
+        <nav class="nav-extended nav-fixed white">
             <div class="nav-wrapper">
-               <a class="brand-logo grey-text text-darken-2" id="page-logo">
-               <i class="material-icons yellow-text text-darken-3" id="page-logo-icon">brightness_7</i> &nbsp; eLuminous
-               </a>
-               <a href="#" class="sidenav-trigger" data-target="mobile-nav">
-               <i class="material-icons grey-text text-darken-3">menu</i>
-               </a>
-               <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <a class="brand-logo grey-text text-darken-3" id="page-logo">
+                    <i class="material-icons teal-text text-darken-1" id="page-logo-icon">brightness_7</i> &nbsp; eLuminous
+                </a>
+                <a href="#" class="sidenav-trigger" data-target="mobile-nav">
+                    <i class="material-icons grey-text text-darken-4">menu</i>
+                </a>
+                <ul id="nav-mobile" class="right hide-on-med-and-down">
                     <!-- Dropdown Trigger -->
-                  <li>
-                     <a class='dropdown-trigger' href='#' data-target='dropdown1'><i class="material-icons grey-text text-darken-1">more_vert</i></a>
+                    <li>
+                        <a class='dropdown-trigger grey-text text-darken-4' href='#' data-target='dropdown1'>
+                           <i class="material-icons left grey-text text-darken-2">arrow_drop_down</i>Connect
+                        </a>
 
-                     <!-- Dropdown Structure -->
-                     <ul id='dropdown1' class='dropdown-content'>
-                        <li><a class="grey-text text-darken-3" href="login.html"><i class="material-icons">eco</i>SignIn</a></li>
-                       <li><a class="grey-text text-darken-3" href="registration.html"><i class="material-icons">view_module</i>SignUp</a></li>
-                       <li><a class="grey-text text-darken-3" href="classrooms.html"><i class="material-icons">class</i>Classroom</a></li>
-                     </ul>
-                  </li>
-               </ul>
+                        <!-- Dropdown Structure -->
+                        <ul id='dropdown1' class='dropdown-content'>
+                            <li><a class="grey-text text-darken-3" href="login.html"><i class="material-icons cyan-text text-darken-3">accessibility_new</i>Access</a></li>
+                            <li><a class="grey-text text-darken-3" href="registration.html"><i class="material-icons yellow-text text-darken-3">school</i>Join Classroom</a></li>
+                        </ul>
+                    </li>
+                </ul>
             </div>
-         </nav>
-         <ul class="sidenav yellow-text text-darken-3" id="mobile-nav">
+        </nav>
+        <ul class="sidenav yellow-text text-darken-3" id="mobile-nav">
             <li>
-               <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
-               <i class="fab fa-github"></i> GitHub
-               </a>
+                <a target="_blank" class="title" href="https://github.com/e-Luminous/ui">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
             </li>
-         </ul>
-      </header>
-      
-      <div id="load" class="progress light-blue lighten-3">
-        <div class="indeterminate blue darken-1"></div>
-      </div>
+            <li><a target="_blank" class="title" href="login.html">Login</a></li>
+            <li><a target="_blank" class="title" href="registration.html">Registration</a></li>
+        </ul>
+    </header>
 
-      <div id="contents" class="container">
-        <h2 class="center-align">To help expand learning for everyone</h2>
-        <h5 class="center-align">Working to support education through our products, programs, and philanthropy.</h5>
-        
-        <br>
+    <div id="load" class="progress light-teal lighten-3">
+        <div class="indeterminate teal"></div>
+    </div>
+
+    <div id="contents" class="container">
+        <h2 class="center-align teal-text text-darken-2">To help expand learning for everyone</h2>
+        <h5 class="center-align">Working to support education through our products, programs, and philanthropy. </h5><br><br>
         <p class="center-align">
-            <img width="380" class="responsive-img" src="src/lib/svg/undraw_alien_science_nonm.svg" />            
+            <img width="380" class="responsive-img" src="src/lib/svg/5dadf56c77ae7437679054.gif" />
         </p>
-        
-      </div>
-      
-      <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-      <script src="src/app/materialize.min.js"></script>
-      <script src="src/app/app.js"></script>
-   </body>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="src/app/materialize.min.js"></script>
+    <script src="src/app/app.js"></script>
+</body>
+
 </html>

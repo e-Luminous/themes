@@ -26,6 +26,10 @@
     margin-top: 120px;
 }
 
+#classCards{
+    margin-top: 100px;
+}
+
 #reg {
     margin-top: 60px;
 }
@@ -54,7 +58,7 @@ h6{
 }
 
 #dropdown1{
-    width: 180px !important;
+    width: 220px !important;
 }
   
 @keyframes animate {
@@ -82,4 +86,52 @@ h6{
 /*rounded*/
 .card{
     border-radius: 9px;
+}
+
+/*Profile Card*/
+
+#profile-card .card-image
+{
+    height: 150px;
+}
+
+#profile-card .card-profile-image
+{
+    position: absolute;
+    z-index: 1;
+    top: 110px;
+
+    width: 70px;
+
+    cursor: pointer;
+}
+
+#profile-card .btn-move-up
+{
+    position: relative;
+    top: -40px;
+    right: -18px;
+
+    margin-right: 10px !important;
+}
+
+#profile-card .card-content .profile-card-i
+{
+    position: relative;
+    top: 6px;
+
+    margin-right: 10px;
+}
+
+#profile-card .card-content p
+{
+    font-size: 1rem;
+
+    margin: 10px 0 12px;
+}
+
+#profile-card .card-reveal i.material-icons
+{
+    position: relative;
+    top: 6px;
 }

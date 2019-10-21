@@ -4,6 +4,7 @@
 
 #contents {
   display: none;
+  margin-top: 90px;
 }
 
 #classbody {
@@ -15,4 +16,8 @@ img {
 }
 .card{
   border-radius: 10px;
+}
+
+.modal{
+  width: 50%;
 }
