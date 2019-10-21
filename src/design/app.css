@@ -17,3 +17,7 @@ img {
 .card{
   border-radius: 10px;
 }
+
+.modal{
+  width: 50%;
+}
