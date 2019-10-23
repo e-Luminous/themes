@@ -26,6 +26,8 @@ $(document).ready(function() {
         addTBody(closestTableTBody, tBodyContent, requestedTableLength);
     });
 
+    
+
     /* Tables to JSON */
     $("#exp01Form").submit(function(e) {
         e.preventDefault();
