@@ -95,6 +95,9 @@ function addTBody(tbodyID, tBodyContent, tBodyLength) {
     if (tBodyContent.includes('type="radio"')) {
         tBodyContent = tBodyContent.replace(/name="group1"/g, 'name="group' + (tBodyLength + 1) + '"');
         console.log(tBodyContent);
+    } else{
+        tBodyContent = tBodyContent.replace(/[0-9]/g,'');
+        console.log(tBodyContent);
     }
 
     tbody += tBodyContent;

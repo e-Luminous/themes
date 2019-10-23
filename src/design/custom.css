@@ -29,6 +29,11 @@ body {
     margin-top: 80px;
 }
 
+.tabs .tab a:focus.active {
+    background-color:transparent;
+
+} 
+
 #load{
     margin-top: 65px;
 }
@@ -139,6 +144,7 @@ label{
 .card{
     border-radius: 9px;
 }
+
 
 
 
